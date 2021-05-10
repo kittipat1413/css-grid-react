@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px auto 300px;
+  grid-template-rows: 1fr;
+  border: 1px solid black;
+}
+.left{
+   background : rgb(180, 243, 243);
+}
+.mid{
+  background: #c9fcd7;
+}
+.right{
+  background: #d2d5f3;
+}
+@media only screen and (max-width:600px){
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
